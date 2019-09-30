@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="get">
-        <p><input type="text" name="Name" placeholder="Введите Ваше имя"></p>
-        <p><input type="text" name="Surname" placeholder="Введите Вашу фамилию"></p>
-        <p><button type="submit" value="Отправить"></p>
-    </form>
+    <main>
+        <div class="form">
+            <form method="get">
+                <p class="field">
+                    <label for="name">Введите Ваше имя</label>
+                    <input type="text" name="Name" id="name">
+                </p>
+                <p class="field">
+                <label for="surname">Введите Вашу фамилию</label>
+                <input type="text" name="Surname" id="surname">
+                </p>
+                <button type="submit" value="Отправить">Отправить</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
